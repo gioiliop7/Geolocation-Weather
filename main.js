@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
     )
       .then((response) => response.json())
       .then((result) => {
-        console.log(result);
         let city = result.name;
         let country = result.sys.country;
         document.getElementById("city").innerText = `${city},${country}`;
