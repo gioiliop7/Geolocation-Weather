@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let dd = String(date.getDate()).padStart(2, "0");
     let mm = String(date.getMonth() + 1).padStart(2, "0"); //January is 0!
     let yyyy = date.getFullYear();
-    date =  dd + "/" + mm + "/" + yyyy;
+    date = dd + "/" + mm + "/" + yyyy;
     document.getElementById("date").innerText = date;
   }
 
@@ -66,6 +66,9 @@ document.addEventListener("DOMContentLoaded", function () {
             document.body.style.background = rainStyle;
             break;
           case "shower rain":
+            document.body.style.background = rainStyle;
+            break;
+          case "moderate rain":
             document.body.style.background = rainStyle;
             break;
           case "thunderstorm":
